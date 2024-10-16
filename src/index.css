@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+  @apply font-Roboto m-0 p-0 h-0 w-0 
+}
+
+.nav-link {
+   @apply flex items-center justify-center lg:w-10 lg:h-10 h-[1.95rem] w-8 cursor-pointer
+}
+
+.nav-link.active {
+  background: rgb(23,59,69);
+  background: linear-gradient(139deg, rgba(23,59,69,1) 0%, rgba(180,63,63,1) 100%);
+  color:#F8EDED;
+  border-radius: 0.375rem;
+}
+
+.text-stroke {
+  -webkit-text-stroke-width: 0.1rem;
+  -webkit-text-stroke-color: black;
+}
+
+.dark .text-stroke {
+    -webkit-text-stroke-color: white;
+  }
+   
+
+
+/* animasi */
+@keyframes scaleIcon {
+    0% {
+        scale: 0;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        -o-transform: translateX(100px);
+        }
+    to  {
+    opacity: 1;
+        }
+}
+
+/* end animasi */
+
+
+:root{
+    --fadeInRight-animation:fadeInRight 1s ease-out forwards;
+    --scale-animation:scaleIcon 1s ease-in-out forwards;
+}
+
+.fadeIn-content{
+    opacity: 0;
+    animation: var(--fadeInRight-animation);
+    animation-delay: 1s;
+}
+.fadeIn-sideContent{
+    opacity: 0;
+    animation: var(--fadeInRight-animation);
+    animation-delay: 2s;
+}
+
+.fadeIn-Des {
+    opacity: 0;
+    animation: var(--fadeInRight-animation);
+    animation-delay: 3s;
+}
+
+.fadeIn-LinkProject{
+    opacity: 0;
+    animation: var(--fadeInRight-animation);
+    animation-delay: 4s;
+}
+
+.fadeIn-experience{
+    opacity: 0;
+    animation: var(--fadeInRight-animation);
+    animation-delay: 5s;
+}
+
+/*class animasi icon skills */
+.skills{
+    scale: 0;
+    animation: var(--scale-animation);
+    animation-delay:2s;
+}
+.html {
+    scale: 0;
+    animation: var(--scale-animation);
+    animation-delay:3s;
+    
+}
+.css {
+    scale: 0;
+    animation: var(--scale-animation);
+    animation-delay:5s;
+}
+.js {
+    scale: 0;
+    animation: var(--scale-animation);
+    animation-delay:6s;
+}
+
+.tailwind {
+    scale: 0;
+    animation:var(--scale-animation);
+    animation-delay:4s;
+}
+
+
+.reacts {
+    scale: 0;
+    animation: var(--scale-animation);
+    animation-delay:8s;
+}
+.nextJs {
+    scale: 0;
+    animation: var(--scale-animation);
+    animation-delay:9s;
+}
+.mongoDB {
+    scale: 0;
+    animation: var(--scale-animation);
+    animation-delay:7s;
+}
+/* end class */
+
+/* bubble */
+.bubble{
+    @apply absolute top-[1.45rem] right-[1.55rem] md:right-[5.5rem] lg:right-[1.7rem] rounded-[50%] w-5 h-5 bg-transparent transition-all duration-700  
+}
+
+.bubble.active{
+    @apply top-0 right-0 w-screen h-screen rounded-none transition-all duration-700 bg-gray-900
+}
+
+#submit.active{
+    @apply w-9 h-9 rounded-full
+}

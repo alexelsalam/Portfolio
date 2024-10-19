@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 body {
-  @apply font-Roboto m-0 p-0 h-0 w-0 
+  @apply font-Roboto m-0 p-0 
 }
 
 .nav-link {

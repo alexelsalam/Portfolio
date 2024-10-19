@@ -9,10 +9,9 @@ import {
   Route,
 } from "react-router-dom";
 import Navbar from "./Components/Navigation";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 function App() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Header />
       <div id="bubble" className="bubble -z-10"></div>
       <div className="mt-16">
@@ -26,7 +25,6 @@ function App() {
           </Routes>
         </Router>
       </div>
-      <DotLottieReact src="path/to/animation.lottie" loop autoplay />
     </div>
   );
 }

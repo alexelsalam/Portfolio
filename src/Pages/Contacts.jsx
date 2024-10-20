@@ -21,13 +21,6 @@ const Contacts = () => {
   const [isFailed, setIsFailed] = useState(false);
 
   //add active class button
-  useEffect(() => {
-    if (activeClass) {
-      document.getElementById("submit").classList.add("active");
-    } else {
-      document.getElementById("submit").classList.remove("active");
-    }
-  }, [activeClass]);
 
   //function send email
   const sendEmail = async (e) => {
@@ -46,7 +39,6 @@ const Contacts = () => {
           setIsSuccess(true);
           setTimeout(() => {
             setIsSuccess(false);
-            setActiveClass(false);
           }, 3000);
         },
         (error) => {
@@ -54,11 +46,20 @@ const Contacts = () => {
           setIsFailed(true);
           setTimeout(() => {
             setIsFailed(false);
-            setActiveClass(false);
           }, 3000);
         }
       );
   };
+  useEffect(() => {
+    if (activeClass) {
+      document.getElementById("submit").classList.add("active");
+    } else {
+      document.getElementById("submit").classList.remove("active");
+    }
+    setTimeout(() => {
+      setActiveClass(false);
+    }, 2000);
+  }, [activeClass]);
   return (
     <section className="flex justify-center w-screen">
       <main className="dark:bg-secondary animate-fadeInRight lg:animate-fadeInLeft lg:ml-[5.5rem] md:w-[720px] md:h-[812px]  lg:w-[1424px] lg:h-[690px] ] h-[36.5rem]  w-[360px]  bg-tertiary rounded-3xl lg:mr-10 md:flex md:justify-center md:gap-10 md:items-center">

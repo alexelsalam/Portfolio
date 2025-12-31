@@ -35,10 +35,7 @@ const Projects = () => {
             className="lg:w-[590px]"
           >
             {DataProjects.map((project, index) => (
-              <SwiperSlide
-                key={index}
-                className="overflow-hidden rounded-xl"
-              >
+              <SwiperSlide key={index} className="overflow-hidden rounded-xl">
                 <img
                   src={project.image}
                   alt="project one"
@@ -64,16 +61,16 @@ const Projects = () => {
           </Swiper>
         </div>
         <div className="lg:h-[470px] px-2 fadeIn-sideContent">
-          <p className="text-[4rem] font-black leading-none text-transparent lg:h-28 font-JetBrainsMono lg:text-8xl text-stroke dark:text-">
+          <p className="text-[2rem] md:text-[2rem] lg:text-[4rem] font-black leading-none text-transparent lg:h-28 font-JetBrainsMono lg:text-8xl text-stroke dark:text-">
             {dataProject.number}
           </p>
-          <p className="text-4xl font-bold tracking-tighter dark:text-tertiary text-secondary lg:h-16 lg:mb-2 lg:text-6xl">
+          <p className="text-2xl font-bold tracking-tighter md:text-3xl dark:text-tertiary text-secondary lg:h-16 lg:mb-2 lg:text-6xl">
             {dataProject.category}
           </p>
           <p className="lg:text-lg lg:w-[400px] lg:h-16 dark:text-tertiary">
             {dataProject.description}
           </p>
-          <p className="lg:w-[407px] lg:h-16 text-secondary lg:text-xl lg:font-medium font-bold dark:text-tertiary">
+          <p className="lg:w-[407px] lg:h-16 lg:mt-20 text-secondary lg:text-xl lg:font-medium font-bold dark:text-tertiary">
             {dataProject.stacks}
           </p>
           <div className="relative w-full border-t-4 dark:border-primary border-secondary lg:w-96">
@@ -82,11 +79,7 @@ const Projects = () => {
               rel="noreferrer noopener"
               target="_blank"
             >
-              <img
-                src={github}
-                alt="github"
-                className="mt-2 w-9 lg:w-11"
-              />
+              <img src={github} alt="github" className="mt-2 w-9 lg:w-11" />
             </a>
             <a
               href={dataProject.website}

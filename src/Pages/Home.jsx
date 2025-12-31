@@ -21,7 +21,7 @@ const Home = () => {
     return () => clearTimeout(timerType, timerRole);
   }, []);
   return (
-    <section className="flex justify-center w-screen ">
+    <section className="flex justify-center w-screen h-screen overflow-hidden">
       <main className="dark:bg-secondary  animate-fadeInRight lg:animate-fadeInLeft relative h-[36.5rem]  w-[360px] overflow-hidden md:w-[720px] md:h-[812px] lg:w-[1424px] lg:h-[690px]  bg-tertiary rounded-3xl lg:ml-[5.5rem] lg:flex  lg:justify-around lg:items-center">
         <div className="mt-5 md:ml-[5.25rem] md:mt-52 lg:w-[533px]  lg:m-0 lg:transition-all lg:duration-300">
           {showType && (
@@ -47,15 +47,10 @@ const Home = () => {
             </h2>
           )}
           <p className="font-medium fadeIn-Des -2 animate-fadeInRight text-secondary sm:text-lg dark:text-tertiary">
-            My goal is to{" "}
-            <span className="text-primary">write maintanble</span>,
-            clean <br />
-            and <span className="text-primary">
-              understandble
-            </span>{" "}
-            code to process <br />
-            development was
-            <span className="text-primary">enjoyble</span>
+            Frontend Engineer focused on{" "}
+            <span className="text-primary">data-driven,</span> dashboards,{" "}
+            complex <span className="text-primary">state management,</span> and
+            Web3 <span className="text-primary">interfaces.</span>
           </p>
         </div>
         {/* link to projects */}

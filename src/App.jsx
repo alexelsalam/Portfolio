@@ -3,15 +3,11 @@ import Contacts from "./Pages/Contacts";
 import Header from "./Components/Header";
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navigation";
 function App() {
   return (
-    <div className="overflow-hidden">
+    <div className="h-screen overflow-hidden ">
       <Header />
       <div id="bubble" className="bubble -z-10"></div>
       <div className="mt-16">

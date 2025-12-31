@@ -1,4 +1,4 @@
-import { ArrowRight } from "../assets/Icons";
+// import { ArrowRight } from "../assets/Icons";
 import linkedin from "../assets/linkedin.svg";
 import whatsapp from "../assets/whatsapp.svg";
 import github from "../assets/github.svg";
@@ -7,7 +7,7 @@ import emailjs from "@emailjs/browser";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import emailAnimation from "../assets/email-animation.lottie";
 import failedAnimation from "../assets/failled-animation.lottie";
-import sendAnimation from "../assets/send-animation.lottie";
+// import sendAnimation from "../assets/send-animation.lottie";
 
 const Contacts = () => {
   const form = useRef();
@@ -70,11 +70,7 @@ const Contacts = () => {
               <span className="text-secondary">.</span>
             </i>
           </h3>
-          <form
-            className="gap-5 mt-5"
-            ref={form}
-            onSubmit={sendEmail}
-          >
+          <form className="gap-5 mt-5" ref={form} onSubmit={sendEmail}>
             {/* input name sender */}
             <div className="flex items-center justify-center lg:gap-5">
               <label htmlFor="fromName">
@@ -155,15 +151,11 @@ const Contacts = () => {
           </div>
           <a
             href="https://github.com/alexelsalam"
-            target="_blank"
+            target="blank"
             className="md:my-5 md:flex md:items-center"
           >
             <div className="flex items-center justify-center w-8 lg:w-12 lg:h-12 ">
-              <img
-                src={github}
-                alt="github"
-                className="w-10 dark:w-10"
-              />
+              <img src={github} alt="github" className="w-10 dark:w-10" />
             </div>
             <p className="hidden pl-2 font-bold md:block font-JetBrainsMono dark:text-tertiary">
               github.com/alexelsalam
@@ -171,7 +163,7 @@ const Contacts = () => {
           </a>
           <a
             href="https://www.linkedin.com/in/alexelsalam/"
-            target="_blank"
+            target="blank"
             className="md:flex md:items-center"
           >
             <div className="flex items-center justify-center w-8 lg:w-12 lg:h-12">
@@ -200,9 +192,7 @@ const Contacts = () => {
       {/* pop-up failed */}
       {isFailed && (
         <div className="absolute flex items-center justify-center w-32 h-8 rounded-md animate-fade-down md:w-36 md:h-10 top-1 bg-tertiary">
-          <p className="text-sm font-bold text-red-600 md:text-base">
-            FAILED!
-          </p>
+          <p className="text-sm font-bold text-red-600 md:text-base">FAILED!</p>
           <DotLottieReact
             src={failedAnimation}
             loop={true}

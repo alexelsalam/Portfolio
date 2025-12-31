@@ -116,7 +116,7 @@ const Contacts = () => {
                   cols="30"
                   rows="10"
                   required
-                  className="bg-secondary rounded-lg outline-none border-[3px] w-full lg:h-96 md:h-80 h-[17rem]   outline-offset-0 text-white focus:border-primary resize-none px-1"
+                  className="bg-secondary rounded-lg outline-none border-[3px] w-full md:h-72 h-[17rem]   outline-offset-0 text-white focus:border-primary resize-none px-1"
                 />
               </label>
             </div>

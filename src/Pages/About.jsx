@@ -17,15 +17,10 @@ const About = () => {
             </h2>
             <p className="mt-1 font-bold dark:text-tertiary text-secondary lg:text-lg">
               I’m a Frontend Engineer with a strong focus on building
-              <span className="text-primary"> data-driven </span>applications,
-              <span className="text-primary"> complex dashboards,</span> and
-              <span className="text-primary"> Web3 interfaces.</span> I enjoy
-              working on problems that involve state complexity,{" "}
-              <span className="text-primary">real-time data,</span> and user
-              interaction at scale, not just visual UI. My approach prioritizes{" "}
-              <span className="text-primary">
-                clarity, performance, and maintainability,
-              </span>{" "}
+              data-driven applications, complex dashboards, and Web3 interfaces.
+              I enjoy working on problems that involve state complexity,{" "}
+              real-time data, and user interaction at scale, not just visual UI.
+              My approach prioritizes clarity, performance, and maintainability,{" "}
               with attention to edge cases and real-world usage rather than
               demos.
             </p>

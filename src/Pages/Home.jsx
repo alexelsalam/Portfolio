@@ -70,7 +70,7 @@ const Home = () => {
 
         {/* status experience text */}
         <div className="fadeIn-experience absolute top-[17px] -right-9 w-36 text-center dark:text-secondary dark:bg-tertiary text-white rotate-45 rounded-lg h-11 bg-secondary">
-          <p className="pt-[6px] text-2xl font-medium">Junior</p>
+          <p className="pt-[6px] text-2xl font-medium">Open</p>
         </div>
       </main>
     </section>

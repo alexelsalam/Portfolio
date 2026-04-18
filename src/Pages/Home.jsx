@@ -27,7 +27,7 @@ const Home = () => {
           {showType && (
             <h2 className="opacity-content font-medium leading-[.75] tracking-tighter text-9xl dark:text-tertiary">
               <Typewriter
-                words={["Front-end"]}
+                words={["Website"]}
                 loop={1}
                 typeSpeed={70}
                 delaySpeed={100000}
@@ -47,7 +47,7 @@ const Home = () => {
             </h2>
           )}
           <p className="font-medium fadeIn-Des -2 animate-fadeInRight text-secondary sm:text-lg dark:text-tertiary">
-            Frontend Engineer focused on{" "}
+            Website Developer focused on{" "}
             <span className="text-primary">data-driven,</span> dashboards,{" "}
             complex <span className="text-primary">state management,</span> and
             Web3 <span className="text-primary">interfaces.</span>

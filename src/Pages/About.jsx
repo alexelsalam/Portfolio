@@ -5,6 +5,7 @@ import Tailwind from "../assets/tailwind.svg";
 import react from "../assets/reactjs.svg";
 import Next from "../assets/nextjs.svg";
 import MongoDb from "../assets/mongoDB.svg";
+import Ts from "../assets/typescript.svg";
 
 const About = () => {
   return (
@@ -16,7 +17,7 @@ const About = () => {
               ABOUT ME
             </h2>
             <p className="mt-1 font-bold dark:text-tertiary text-secondary lg:text-lg">
-              I’m a Frontend Engineer with a strong focus on building
+              I’m a Website Developer with a strong focus on building
               data-driven applications, complex dashboards, and Web3 interfaces.
               I enjoy working on problems that involve state complexity,{" "}
               real-time data, and user interaction at scale, not just visual UI.
@@ -51,6 +52,9 @@ const About = () => {
           </p>
           <p className="mongoDB md:right-[12.5rem] right-2 absolute drop-shadow-[5px_8px_5px_rgba(0,0,0,0.25)] lg:bottom-8 lg:right-[8.5rem] flex items-center justify-center w-10 h-10 rounded-full bg-primary dark:bg-tertiary">
             <img src={MongoDb} alt="MongoDb" className="w-full h-7" />
+          </p>
+          <p className="ts p-2 rounded-full md:left-72 md:top-[12.5rem] left-2 top-28 drop-shadow-[5px_8px_5px_rgba(0,0,0,0.25)] absolute w-11 h-11 dark:bg-tertiary bg-primary lg:-top-[12rem] lg:left-[16rem] justify-center items-center  flex overflow-hidden">
+            <img src={Ts} alt="HTML" className="w-full h-12" />
           </p>
         </div>
       </main>

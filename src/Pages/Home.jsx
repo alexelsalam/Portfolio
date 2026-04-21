@@ -22,50 +22,52 @@ const Home = () => {
   }, []);
   return (
     <section className="flex justify-center w-screen h-screen overflow-hidden">
-      <main className="dark:bg-secondary  animate-fadeInRight lg:animate-fadeInLeft relative h-[36.5rem]  w-[360px] overflow-hidden md:w-[720px] md:h-[812px] lg:w-[1424px] lg:h-[690px]  bg-tertiary rounded-3xl lg:ml-[5.5rem] lg:flex  lg:justify-around lg:items-center">
-        <div className="mt-5 md:ml-[5.25rem] md:mt-52 lg:w-[533px]  lg:m-0 lg:transition-all lg:duration-300">
-          {showType && (
-            <h2 className="opacity-content font-medium leading-[.75] tracking-tighter text-9xl dark:text-tertiary">
-              <Typewriter
-                words={["Website"]}
-                loop={1}
-                typeSpeed={70}
-                delaySpeed={100000}
-              />
-            </h2>
-          )}
+      <main className="dark:bg-secondary flex  animate-fadeInRight lg:animate-fadeInLeft relative h-[36.5rem]  w-[360px] overflow-hidden md:w-[720px] md:h-[812px] lg:w-[1424px] lg:h-[690px]  bg-tertiary rounded-3xl lg:ml-[5.5rem] lg:flex  lg:justify-around lg:items-center">
+        <div className="flex flex-col items-center justify-center p-2 lg:flex-row lg:gap-10">
+          <div className=" md:ml-[5.25rem] lg:w-[533px]  lg:m-0 lg:transition-all lg:duration-300">
+            {showType && (
+              <h2 className="opacity-content font-medium leading-[.75] tracking-tighter text-7xl md:text-9xl dark:text-tertiary">
+                <Typewriter
+                  words={["Website"]}
+                  loop={1}
+                  typeSpeed={70}
+                  delaySpeed={100000}
+                />
+              </h2>
+            )}
 
-          {showRole && (
-            <h2 className="font-bold text-7xl md:text-9xl md:font-medium md:tracking-tighter dark:text-tertiary">
-              <Typewriter
-                words={["Developer"]}
-                loop={1}
-                cursor
-                typeSpeed={70}
-                delaySpeed={20000}
-              />
-            </h2>
-          )}
-          <p className="font-medium fadeIn-Des -2 animate-fadeInRight text-secondary sm:text-lg dark:text-tertiary">
-            Website Developer focused on{" "}
-            <span className="text-primary">data-driven,</span> dashboards,{" "}
-            complex <span className="text-primary">state management,</span> and
-            Web3 <span className="text-primary">interfaces.</span>
-          </p>
-        </div>
-        {/* link to projects */}
-        <div className="flex gap-1 mt-2 ml-2 md:ml-[5.25rem] lg:h-60 fadeIn-LinkProject">
-          <div className="h-10 text-center rounded-full w-44 sm:h-16 sm:w-72 bg-secondary dark:bg-tertiary">
-            <p className="pt-1 text-2xl font-medium text-white dark:text-secondary sm:pt-3 sm:text-3xl ">
-              <i>projects</i>
+            {showRole && (
+              <h2 className="font-bold text-7xl md:text-9xl md:font-medium md:tracking-tighter dark:text-tertiary">
+                <Typewriter
+                  words={["Developer"]}
+                  loop={1}
+                  cursor
+                  typeSpeed={70}
+                  delaySpeed={20000}
+                />
+              </h2>
+            )}
+            <p className="font-medium fadeIn-Des -2 animate-fadeInRight text-secondary sm:text-lg dark:text-tertiary">
+              Website Developer focused on{" "}
+              <span className="text-primary">data-driven,</span> dashboards,{" "}
+              complex <span className="text-primary">state management,</span>{" "}
+              and Web3 <span className="text-primary">interfaces.</span>
             </p>
           </div>
-          <NavLink
-            to="/projects"
-            className="flex items-center justify-center w-10 h-10 text-white rounded-full dark:text-secondary hover:animate-bounceRight sm:w-16 sm:h-16 bg-primary"
-          >
-            <ArrowRight className="w-6 sm:w-10" />
-          </NavLink>
+          {/* link to projects */}
+          <div className="flex gap-1 mt-2 ml-2 md:ml-[5.25rem] lg:h-60 fadeIn-LinkProject">
+            <div className="h-10 text-center rounded-full w-44 sm:h-16 sm:w-72 bg-secondary dark:bg-tertiary">
+              <p className="pt-1 text-2xl font-medium text-white dark:text-secondary sm:pt-3 sm:text-3xl ">
+                <i>projects</i>
+              </p>
+            </div>
+            <NavLink
+              to="/projects"
+              className="flex items-center justify-center w-10 h-10 text-white rounded-full dark:text-secondary hover:animate-bounceRight sm:w-16 sm:h-16 bg-primary"
+            >
+              <ArrowRight className="w-6 sm:w-10" />
+            </NavLink>
+          </div>
         </div>
 
         {/* status experience text */}
